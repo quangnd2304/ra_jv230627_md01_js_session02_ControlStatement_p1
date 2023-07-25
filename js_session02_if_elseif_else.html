@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu lệnh if-else</title>
+</head>
+
+<body>
+    <script>
+        // Nhập vào một số nguyên, kiểm tra số nguyên là số chẵn hay lẻ
+        let number = +prompt("Nhập vào một số nguyên:");
+        if (number % 2 == 0) {
+            console.log("Số nguyên là số chẵn");
+        } else {
+            console.log("Số nguyên là số lẻ");
+        }
+        // In ra số dư trong phép chia 3: 1 if, 1 else if, 1 else    
+        if (number % 3 == 0) {
+            console.log("Số nguyên chia hết cho 3");
+        } else if (number % 3 == 1) {
+            console.log("Số nguyên chia 3 dư 1");
+        } else {
+            console.log("Số nguyên chia 3 dư 2");
+        }
+        // In ra số dư trong phép chia 4: 1 if, 2 else if, 1 else     
+        if (number % 4 == 0) {
+            console.log("Số nguyên chia hết cho 4");
+        } else if (number % 4 == 1) {
+            console.log("Số nguyên chia 4 dư 1");
+        } else if (number % 4 == 2) {
+            console.log("Số nguyên chia 4 dư 2");
+        } else {
+            console.log("Số nguyên chia 4 dư 3");
+        }
+        //Bài tập ứng dụng 1: Sử dụng câu lệnh if...else in ra console số dư trong phép chia 8
+        /*Bài tập ứng dụng 2: Kiểm tra số nguyên có chia hết cho cả 3 và 5 không bằng 2 cách
+            - Nếu chia hết cho cả 3 và 5: In ra YES
+            - Nếu không: In ra NO
+        */
+        //Cách 1: Sử dụng biểu thức điều kiện gồm 2 điều kiện kết hợp qua toán tử AND
+        // if (number % 3 == 0 && number % 5 == 0) {
+        //     console.log("YES");
+        // } else {
+        //     console.log("NO");
+        // }
+        //Cách 2: Sử dụng các câu lệnh điều kiện lồng nhau
+        if (number % 3 == 0) {
+            if (number % 5 == 0) {
+                console.log("YES");
+            } else {
+                console.log("NO");
+            }
+        } else {
+            console.log("NO");
+        }
+
+    </script>
+</body>
+
+</html>
